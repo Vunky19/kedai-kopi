@@ -1,0 +1,89 @@
+#menu {
+  display: none;
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  #navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  #navbar-nav.active {
+    right: 0;
+  }
+
+  #navbar-nav a {
+    display: block;
+    color: black;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  #navbar-nav a::after{
+    transform-origin: 0 0;
+  } 
+
+  #navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  #row {
+  flex-wrap: wrap;
+  }
+
+  #about-img img{
+  height: 24rem;
+  object-fit: cover;
+  }
+
+  #content {
+  padding:0;
+  }
+
+  #content h2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+
+  #content p {
+    font-size: 1.6rem;
+  }
+
+  #contact #row {
+    flex-wrap: wrap;
+  }
+
+  #contact #row #map {
+    height: 30rem;
+  }
+
+  #contact #row form {
+    padding-top: 0;
+  }
+}
+/* Android */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

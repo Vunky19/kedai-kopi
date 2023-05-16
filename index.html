@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins"],
+              source: ["Source Sans Pro"],
+              playfair: ["Playfair Display"],
+            },
+            colors: {
+              coffee: "#ab6832",
+            },
+            backgroundImage: {
+              hero: "url('/assets/img/fahmi-fakhrudin-nzyzAUsbV0M-unsplash.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Kenangan Senja</title>
+  </head>
+  <body class="m-0 p-0 box-border outline-none border-none no-underline bg-black">
+    <nav class="flex justify-between items-center p-8 space-x-2 text-white border-b-2 border-slate-400 px-16 fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+      <a href="#" class="text-3xl font-bold font-poppins text-white italic">kenangan<span class="text-coffee">senja</span>.</a>
+
+      <div id="navbar-nav" class="font-poppins font-light">
+        <a href="#" class="inline-block mx-5 text-lg hover:text-coffee after:block after:contents[''] after:px-1 after:border-b-2 after:border-coffee after:scale-x-0 hover:after:scale-x-75 after:transition ease-linear delay-100">Home</a>
+        <a href="#about" class="inline-block mx-5 text-lg hover:text-coffee after:block after:contents[''] after:px-1 after:border-b-2 after:border-coffee after:scale-x-0 hover:after:scale-x-75 after:transition ease-linear delay-100">About</a>
+        <a href="#menu-section"class="inline-block mx-5 text-lg hover:text-coffee after:block after:contents[''] after:px-1 after:border-b-2 after:border-coffee after:scale-x-0 hover:after:scale-x-75 after:transition ease-linear delay-100">Menu</a>
+        <a href="#contact" class="inline-block mx-5 text-lg hover:text-coffee after:block after:contents[''] after:px-1 after:border-b-2 after:border-coffee after:scale-x-0 hover:after:scale-x-75 after:transition ease-linear delay-100">Contact</a>
+      </div>
+
+      <div class="flex">
+        <a href="#" id="search" class="mx-4 hover:text-coffee"><i data-feather="search"></i></a>
+        <a href="#" id="shop" class="mx-4 hover:text-coffee"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu" class="mx-4 hover:text-coffee"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section id="home" class="bg-hero text-white min-h-screen flex items-center bg-no-repeat bg-cover bg-center relative after:content[''] after:block after:absolute after:w-full after:h-full after:bg-gradient-to-b from-transparent from-5% to-black to-100%">
+      <main class="z-10 p-32 max-w-6xl">
+        <h1 class="text-8xl font-playfair">
+          Stay with a <span class="text-coffee">Coffee</span>
+        </h1>
+        <p class="font-poppins text-4xl my-3 mix-blend-difference">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+          similique!
+        </p>
+        <a href="#" class="inline-block bg-[#ab6832] text-2xl p-5 rounded-xl font-poppins shadow-2xl">Get Started</a>
+      </main>
+    </section>
+
+    <section id="about" class="text-white p-[8rem_7%_1.4rem]">
+      <h2 class="text-3xl text-center font-source font-bold text-5xl mb-12"><span class="text-coffee">About</span> Me</h2>
+      <div id="row" class="flex">
+        <div id="about-img" class="flex-[1_1_45rem]">
+          <img src="/assets/img/cyril-saulnier-mpSMThAU4OY-unsplash.jpg" alt="About me" class="rounded-xl w-full">
+        </div>
+        <div id="content" class="flex-[1_1_35rem] p-[0_1rem]">
+          <h2 class="font-source font-black text-6xl mb-4 ">Why Choose Us?</h2>
+          <p class="mb-4 font-poppins font-light text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at, libero laboriosam ad eveniet obcaecati.</p>
+          <p class="mb-4 font-poppins font-light text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos quibusdam deleniti deserunt unde possimus quia similique eos alias accusantium.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu-section" class="text-white p-[8rem_7%_1.4rem]">
+      <h2 class="text-3xl text-center font-source font-bold text-5xl mb-4 text-white mt-7">Our <span class="text-coffee">Menu</span></h2>
+      <p class="text-center text-2xl font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, placeat.</p>
+
+      <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 class="sr-only">Products</h2>
+    
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 text-center">
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Espresso Coffee" class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Espresso</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Latte</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 20K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Americano</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 12K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Cappucino</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Cappucino</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Cappucino</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Cappucino</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+          <a href="#" class="group">
+            <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-full bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+              <img src="/assets/img/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+            </div>
+            <h3 class="mt-4 font-source text-3xl text-gray-300">Cappucino</h3>
+            <p class="mt-1 text-lg font-medium text-gray-500">IDR 15K</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="text-white p-[8rem_7%_1.4rem]">
+      <h2 class="text-3xl text-center font-source font-bold text-7xl mb-4 text-white mt-7"><span class="text-coffee">Contact</span></h2>
+      <p class="text-center text-2xl font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, placeat.</p>
+
+      <div id="row" class="flex mt-8 bg-zinc-950">
+        <iframe id="map" class="flex-[1_1_45rem] w-full object-cover rounded-md" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d698.5401719332785!2d112.61648056868894!3d-7.943020400219638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788274d9be7303%3A0x36e8579e96a3cb01!2sToko%20Anda%20(B.%20Tien)!5e0!3m2!1sid!2sid!4v1684231372445!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <form action="" class="flex-[1_1_45rem] p-[5rem_2rem] text-center">
+          <div class="flex items-center mt-8 bg-black border-[1px] pl-8 rounded-xl">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="name" class="w-full p-8 text-3xl bg-transparent text-white outline-none">
+          </div>
+          <div class="flex items-center mt-8 bg-black border-[1px] pl-8 rounded-xl">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" class="w-full p-8 text-3xl bg-transparent text-white outline-none">
+          </div>
+          <div class="flex items-center mt-8 bg-black border-[1px] pl-8 rounded-xl">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="phone number" class="w-full p-8 text-3xl bg-transparent text-white outline-none">
+          </div>
+          <button type="submit" class="mt-12 inline-block p-[1rem_3rem] text-2xl text-white bg-coffee cursor-pointer rounded-xl">Send</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer class="text-white bg-coffee text-center p-[1rem_0_3rem] mt-12 font-poppins">
+      <div class="flex justify-center p-[1rem_0]">
+        <a class="mx-3 hover:text-black" href=""><i data-feather="instagram"></i></a>
+        <a class="mx-3 hover:text-black" href=""><i data-feather="twitter"></i></a>
+        <a class="mx-3 hover:text-black" href=""><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="mb-4">
+        <a class="text-xl mx-3 hover:text-black" href="#home">Home</a>
+        <a class="text-xl mx-3 hover:text-black" href="#about">About</a>
+        <a class="text-xl mx-3 hover:text-black" href="#menu-section">Menu</a>
+        <a class="text-xl mx-3 hover:text-black" href="#contact">Contact</a>
+      </div>
+
+      <div class="text-sm">
+        <p>Created by <a class="font-bold text-black hover:text-white" href="">vunkyhimawan</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
